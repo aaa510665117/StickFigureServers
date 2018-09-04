@@ -10,6 +10,10 @@ namespace AspMvc.Controllers
 {
     public class GetPhotoLinkController : Controller
     {
+        public class resultObj
+        {
+            public Object result { get; set; }
+        }
         public class strAry1
         {
             public List<string> animal { get; set; }
@@ -72,7 +76,13 @@ namespace AspMvc.Controllers
             data.Add(strAry3);
             data.Add(strAry4);
             data.Add(strAry5);
-            return Json(data, JsonRequestBehavior.AllowGet);
+
+            resultObj resultobj = new resultObj();
+            resultobj.result = data;
+
+            JObject outObject = new JObject();
+            outObject.Add("result", Newtonsoft.Json.JsonConvert.SerializeObject(data));
+            return Json(resultobj, JsonRequestBehavior.AllowGet);
 
             //var obj = new JObject();
             //obj.Add(data);
