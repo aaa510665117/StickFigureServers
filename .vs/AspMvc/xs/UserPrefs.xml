@@ -7,21 +7,6 @@
       <File FileName="AspMvc/App_Start/WebApiConfig.cs" Line="18" Column="15" />
       <File FileName="AspMvc/Controllers/GetPhotoLinkController.cs" Line="29" Column="29" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="AspMvc" expanded="True" selected="True">
-            <Node name="AspMvc" expanded="True">
-              <Node name="App_Start" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.AspMvc PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
